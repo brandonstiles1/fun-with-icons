@@ -1,23 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import SignalStrength from './components/SignalStrength';
+import Wifi from './components/Wifi';
+import Hammer from './components/Hammer';
+import ComputerWorker from './components/ComputerWorker';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <>
+          <h2>Below are some icons for Brooks</h2>
+          <div className='iconDiv'>
+            <Wifi />
+            <SignalStrength />
+            <Hammer />
+          </div>
+          <ComputerWorker />
+        </>
       </header>
     </div>
   );
